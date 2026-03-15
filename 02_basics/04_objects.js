@@ -57,7 +57,7 @@ const user=[     // is tarike se ham ek array ke andar bhi object ho sakte hai
 console.log(user[0].name); // array ke andar objects ki values ko access kar sakte hai
 console.log(user[1].email);
 */
-
+/*
 const instaUser={
     name:"jay",
     age:23,
@@ -70,3 +70,42 @@ console.log(Object.values(instaUser)); // isse hame ek values of array milega ji
 console.log(Object.entries(instaUser)); // isse hame array of arrays milta hai jisme ek array ke andar 2 size ki bahut se array milte hai jisme 0 index me key and 1 index me uski value hoti hai
 console.log(instaUser.hasOwnProperty("male")); // isse ham kisi object me check karte hai ki koi key array me hai ya nahi : ye true or false me value deta hai
 console.log(Object.keys(instaUser).length);  // is tarah kisi object ki length nikal sakte hai
+*/
+
+//---------------------------------------------object destructure--------------------------------------------------------------------
+/*
+const course={
+    courseName:"JS in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+};
+//console.log(course.courseInstructor); // is tarike se hame course objece ke andar ke key:values ko access karte hai
+const {courseInstructor}=course; // is tarike se ham object ki kisi value ka destructure kar sakte hai: matlab isme ab hame bar bar 
+// course.courseInstructor karne ki jarurat nahi hai ham isko direct courseInstructor likh ke use kar sakte hai
+console.log(courseInstructor); // ye course.courseInstructor ka kam karega
+
+const {courseInstructor: instructor}=course; // is tarike se kam key ka name bhi change kar sakte hai: ab course.courseInstructor ka kam instructor karega
+console.log(instructor); // course.courseInstructor ki value print hogi
+*/
+
+//-----------------------------------------------JSON API------------------------------------------------------------------
+/*
+{
+    "name":"jay",
+    "age":23,
+    "courseName":"JS in hindi",
+    "price":"free"
+}
+
+
+[
+    {},
+    {},
+    {}
+]
+*/
+/*
+  ek API menu ki tarah hoti hai jisme hame matlab nahi hota ki kaise ho raha hai , hame sirf matlab hota hai ki kya ho raha hai
+  JSON API hame object ke room ke data deta hai jiski detail ham aage padenge
+  JSON array ke format me bhi data return karta hai jisme bahut sare objects hote hai
+*/
